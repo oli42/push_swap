@@ -1,5 +1,5 @@
 SRC =	main.c option.c init_stack.c checking.c utils.c ft_init.c spot_smallest.c \
-	r.c p_s.c moves_.c ft_lstnew.c ft_lstadd_back.c ft_lstlast.c ft_split.c \
+	r.c p_s.c moves_.c ft_lstnew.c ft_lstadd_back.c ft_lstlast.c ft_strlen.c ft_split.c ft_strjoin.c\
 	sort_stack.c chunck.c chunck_retour.c makeup.c \
 	retour_div.c aller_div.c div.c sort_list.c sort_list_retour.c \
 

@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/08 16:48:34 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/19 21:43:35 by olivier          ###   ########.fr       */
+/*   Created: 2021/03/23 13:44:40 by ochichep          #+#    #+#             */
+/*   Updated: 2021/08/19 21:42:24 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	main(int argc, char **argv)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	t_tools	*magic;
-	char	**dst;
-	char	*str;
+	char			*join;
+	unsigned int	i;
 
-	str = NULL;
-	if (argc == 1)
-		exit (0);
-	magic = (t_tools *)malloc(sizeof(magic));
-	if (argc > 2)
-	{
-		str = op(argv);
-		dst = ft_split((const char *)str, 32);
-		init_stack(dst, magic);
-	}
-	else if (argc == 2)
-	{
-		dst = ft_split(argv[1], 32);
-		init_stack(dst, magic);
-	}
-	free(magic);
-	return (0);
+	i = 0;
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+	join = (char *)malloc
+		(sizeof(*join) * (ft_strlen(s1) + (ft_strlen(s2) + 1)));
+	if (!(join))
+		return (NULL);
+	while (*s1 != '\0')
+		join[i++] = *s1++;
+	join[i++] = ' ';
+	while (*s2 != '\0')
+		join[i++] = *s2++;
+	join[i++] = ' ';
+	join[i] = '\0';
+	return (join);
 }

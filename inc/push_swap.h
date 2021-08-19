@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 17:13:12 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/09 15:35:13 by ochichep         ###   ########.fr       */
+/*   Updated: 2021/08/19 21:30:33 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,8 @@ int		check_sort(t_list *a);
 t_list	*copy_list(t_list *a);
 int		init_stack(char **dst, t_tools *d);
 int		option(char **argv, t_tools *d);
+char	*op(char **argv);
+
 /*--------------------------------------------------*/
 void	sa(t_list **a);
 void	sb(t_list **a);
@@ -77,6 +79,9 @@ void	rrr(t_list **a, t_list **b);
 int		ft_atoi(const char *ptr);
 void	ft_putstr_fd(char *str, int fd);
 char	**ft_split(char const *s, char c);
+char	*ft_strjoin(char const *s1, char const *s2);
+size_t	ft_strlen(const char *str);
+
 /*--------------------------------------------------*/
 int		sort_3(t_list **a, t_tools *d);
 void	sort_5(t_list **a, t_list **b, t_tools *d);

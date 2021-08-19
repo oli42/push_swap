@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 16:40:46 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/12 13:33:16 by ochichep         ###   ########.fr       */
+/*   Updated: 2021/08/19 21:36:32 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,4 +62,19 @@ int	option(char **argv, t_tools *magic)
 	i--;
 	option_norm(a, b, magic, i);
 	return (0);
+}
+
+char	*op(char **argv)
+{
+	int		i;
+	char*	str;
+
+	str = " ";
+	i = 1;
+	while (argv[i])
+	{
+		str = ft_strjoin((const char *)str, (const char *)argv[i]);
+		i++;
+	}
+	return (str);
 }

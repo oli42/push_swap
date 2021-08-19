@@ -1,38 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/08 16:48:34 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/19 21:43:35 by olivier          ###   ########.fr       */
+/*   Created: 2021/03/23 13:57:44 by ochichep          #+#    #+#             */
+/*   Updated: 2021/08/19 21:30:18 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	main(int argc, char **argv)
+size_t	ft_strlen(const char *str)
 {
-	t_tools	*magic;
-	char	**dst;
-	char	*str;
+	size_t	i;
 
-	str = NULL;
-	if (argc == 1)
-		exit (0);
-	magic = (t_tools *)malloc(sizeof(magic));
-	if (argc > 2)
-	{
-		str = op(argv);
-		dst = ft_split((const char *)str, 32);
-		init_stack(dst, magic);
-	}
-	else if (argc == 2)
-	{
-		dst = ft_split(argv[1], 32);
-		init_stack(dst, magic);
-	}
-	free(magic);
-	return (0);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }
