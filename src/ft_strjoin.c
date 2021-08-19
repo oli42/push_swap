@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/23 13:44:40 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/19 21:42:24 by olivier          ###   ########.fr       */
+/*   Updated: 2021/08/19 22:01:11 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,13 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (NULL);
 	while (*s1 != '\0')
 		join[i++] = *s1++;
-	join[i++] = ' ';
+	i++;
+	join[i] = ' ';
 	while (*s2 != '\0')
 		join[i++] = *s2++;
-	join[i++] = ' ';
+	i++;
+	join[i] = ' ';
+	i++;
 	join[i] = '\0';
 	return (join);
 }

@@ -6,13 +6,13 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 16:40:46 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/19 21:36:32 by olivier          ###   ########.fr       */
+/*   Updated: 2021/08/19 21:55:49 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	option_norm(t_list	*a, t_list *b, t_tools *magic, int i)
+/* int	option_norm(t_list	*a, t_list *b, t_tools *magic, int i)
 {
 	int	x;
 
@@ -62,7 +62,7 @@ int	option(char **argv, t_tools *magic)
 	i--;
 	option_norm(a, b, magic, i);
 	return (0);
-}
+} */
 
 char	*op(char **argv)
 {

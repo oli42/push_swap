@@ -6,7 +6,7 @@
 /*   By: olivier <olivier@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 16:48:34 by ochichep          #+#    #+#             */
-/*   Updated: 2021/08/19 21:43:35 by olivier          ###   ########.fr       */
+/*   Updated: 2021/08/19 22:01:46 by olivier          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int	main(int argc, char **argv)
 	if (argc > 2)
 	{
 		str = op(argv);
+		printf("%s", str);
 		dst = ft_split((const char *)str, 32);
 		init_stack(dst, magic);
 	}
