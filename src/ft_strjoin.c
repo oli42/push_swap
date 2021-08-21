@@ -21,16 +21,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 	join = (char *)malloc
-		(sizeof(*join) * (ft_strlen(s1) + (ft_strlen(s2) + 1)));
+		(sizeof(*join) * (ft_strlen(s1) + (ft_strlen(s2) + 3)));
 	if (!(join))
 		return (NULL);
 	while (*s1 != '\0')
 		join[i++] = *s1++;
-	i++;
 	join[i] = ' ';
 	while (*s2 != '\0')
 		join[i++] = *s2++;
-	i++;
 	join[i] = ' ';
 	i++;
 	join[i] = '\0';

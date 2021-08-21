@@ -16,16 +16,15 @@ int	main(int argc, char **argv)
 {
 	t_tools	*magic;
 	char	**dst;
-	char	*str;
+	const char	*str;
 
-	str = NULL;
+	str = " ";
 	if (argc == 1)
 		exit (0);
 	magic = (t_tools *)malloc(sizeof(magic));
 	if (argc > 2)
 	{
-		str = op(argv);
-		printf("%s", str);
+		str = option(argv);
 		dst = ft_split((const char *)str, 32);
 		init_stack(dst, magic);
 	}

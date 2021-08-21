@@ -56,8 +56,7 @@ void	ft_init(t_tools *d);
 int		check_sort(t_list *a);
 t_list	*copy_list(t_list *a);
 int		init_stack(char **dst, t_tools *d);
-int		option(char **argv, t_tools *d);
-char	*op(char **argv);
+char	*option(char **argv);
 
 /*--------------------------------------------------*/
 void	sa(t_list **a);
