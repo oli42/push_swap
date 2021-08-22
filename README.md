@@ -30,4 +30,4 @@ $>./push_swap 0 one 2 3
 Error
 $>
 
-#### FYI: this push_swap sorts any list but it is optimmized for sorting a list of 3, 5, 100 or 500  ###
+#### FYI: this push_swap can sort any list but it is optimized for sorting a list of 3, 5, 100 or 500  ###
